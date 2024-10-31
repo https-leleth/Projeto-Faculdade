@@ -1,0 +1,34 @@
+¬Projeto.HTML
+	-Correção em erros de português;
+	-Break line para separar o horário de funcionamento da frase"Quem prova...";
+	-Adição de alguns comentários pra checkpoint;
+	-Mudança de "style.css" pra "stylelogin.css" pra fácil identificação.
+
+¬Login.HTML
+	-Mudança de "style.css" pra "stylelogin.css";
+	-Correção de erros de português.
+
+¬Cardápio.HTML
+	-Correção em erros de português;
+	-Retirada de css do arquivo, deixando separado o mesmo do html e criando um arquivo próprio;
+	-Botões de adicionar ao pedido embaixo de cada card;
+	-Diminuição de tamanho de cards;
+	-Botão meus pedidos adicionado;
+	-Botão meus pedidos linkado a aba pedidos e funcionando.
+
+¬Carrinho.HTML
+	-Criação da aba "meus pedidos";
+	-Centralização de título;
+	-Botão de "voltar" criado;
+	-Botão "finalizar compra" criado;
+	-Botão "voltar" linkado para voltar ao cardápio.
+
+¬StyleCarrinho.CSS
+	-Criação do próprio.
+
+¬StyleLogin.CSS
+	-Antes era um arquivo fantasma sem link algum com qualquer HTML;
+	-Agora está linkado a "Projeto.html" e "login.html".
+
+¬StyleCardapio.CSS
+	-Criação do próprio.
