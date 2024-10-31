@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hamburgueria Dev</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <img src="logo.png" alt="logo" class="logo">
+            <h1>Hamburgueria Dev</h1>
+        </div>
+        <h2>Entrar ou Cadastrar</h2>
+        <p>Faça login com sua conta do Google ou e-mail:</p>
+
+        <div class="login-options">
+            
+            <form id="emailLoginForm">
+                <input type="email" placeholder="Seu e-mail" required>
+                <input type="password" placeholder="Sua senha" required>
+                <button class="login-btn google-btn">Login com Google</button>
+                <button type="submit" class="login-btn">Login com E-mail</button>
+            </form>
+        </div>
+
+        <p class="register-prompt">Ainda não tem uma conta? <a href="#" class="register-link">Cadastre-se aqui!</a></p>
+    </div>
+
+    <script>
+        document.getElementById('emailLoginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Aqui você pode adicionar a lógica para autenticar com e-mail e senha
+            alert('Login com e-mail enviado!');
+        });
+    </script>
+</body>
+</html>
