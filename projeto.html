@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria Dev</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="logo" class="logo">
+            <h1>Hamburgueria Dev</h1>
+        </div>
+        <p class="description">
+            Sejam bem-vindos à Hamburgueria Dev! Entregas de SEG. a DOM.
+             das 14h às 21h. 
+             <BR>
+             Quem prova, aprova e recomenda!
+        </p>
+        <button class="order-btn" id="orderBtn">Pedir por delivery ou retirada</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <p>Como deseja continuar?</p>
+        <a href="./login.html"> <button class="action-btn">Entrar ou cadastrar</button> </a>
+        <button class="action-btn secondary-btn">Continuar sem logar</button>
+    </div>
+<!-- Tela de Login -->
+<div class="login-container" id="loginContainer" style="display: none;">
+    <div class="header">
+        <img src="logo.png" alt="logo" class="logo">
+        <h1>Hamburgueria Dev</h1>
+    </div>
+
+    <h2>Entrar ou Cadastrar</h2>
+        <p>Faça login com sua conta do Google ou e-mail:</p>
+
+        <div class="login-options"></div>
+            <button class="login-btn google-btn" >Login com Google</button>
+            <form id="emailLoginForm">
+                <input type="email" placeholder="Seu e-mail" required>
+                <input type="password" placeholder="Sua senha" required>
+                <button type="submit" class="login-btn">Login com E-mail</button>
+            </form>
+        </div>
+        
+    </div>
+    <!-- Incluindo o JavaScript diretamente -->
+    <script>
+        document.getElementById('orderBtn').addEventListener('click', function () {
+            // Quando o botão for clicado, o popup sobe
+            document.getElementById('popup').classList.add('active');
+        });
+
+        document.getElementById('loginBtn').addEventListener('click', function () {
+            // Esconde o popup e mostra a tela de login
+            document.getElementById('popup').classList.remove('active');
+            document.getElementById('loginContainer').style.display = 'block';
+        });
+
+        document.getElementById('emailLoginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Aqui você pode adicionar a lógica para autenticar com e-mail e senha
+            alert('Login com e-mail enviado!');
+        });
+    </script>
+</body>
+</html>
