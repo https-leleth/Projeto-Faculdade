@@ -1,70 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio</title>
-    <link rel="stylesheet" href="stylecardapio.css">
+    <title>Login - Hamburgueria Dev</title>
+    <link rel="stylesheet" href="stylelogin.css">
 </head>
 <body>
-    <header>
-        <h1>Cardápio</h1>
-        <a href="carrinho.html" class="button">Meus Pedidos</a>
-    </header>
-    <div class="menu">
-        <div class="card">
-            <img src="https://via.placeholder.com/200x150" alt="Prato 1">
-            <h3>Toiço Burger</h3>
-            <p>Hambúrguer 150g, queijo cheddar, cebola caramelizada, farofa de bacon e maionese.</p>
-            <p class="price">R$ 25,00</p>
-            <button class="adicionar-pedido">Adicionar aos pedidos</button>
+    <div class="login-container">
+        <div class="header">
+            <img src="logo.png" alt="logo" class="logo">
+            <h1>Hamburgueria Dev</h1>
         </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/200x150" alt="Prato 2">
-            <h3>Smoked Salad Burger</h3>
-            <p>Hambúrguer 150g, queijo cheddar, alface, tomate e maionese.</p>
-            <p class="price">R$ 22,00</p>
-            <button class="adicionar-pedido">Adicionar aos pedidos</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/200x150" alt="Prato 3">
-            <h3>Original Burger</h3>
-            <p>Hambúrguer 150g, queijo cheddar e maionese.</p>
-            <p class="price">R$ 20,00</p>
-            <button class="adicionar-pedido">Adicionar aos pedidos</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/200x150" alt="Prato 4">
-            <h3>Super Cheddar</h3>
-            <p>Hambúrguer 150g, queijo cheddar, cebola caramelizada, molho barbecue e maionese.</p>
-            <p class="price">R$ 55,00</p>
-            <button class="adicionar-pedido">Adicionar aos pedidos</button>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/200x150" alt="Prato 5">
-            <h3>Bruto Burger</h3>
-            <p>2 hambúrgueres de 150g, dobro de cheddar, fatias de bacon, molho barbecue e maionese.</p>
-            <p class="price">R$ 35,00</p>
-            <button class="adicionar-pedido">Adicionar aos pedidos</button>
-        </div>
-    </div>
-    <div class="menu-barrinha">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-opcoes">
-        <ul>
-            <li><a href="login.html" class="fazer-login">Fazer Login</a></li>
-        </ul>
-      </div>
-        <script>
-const menuBarrinha = document.querySelector('.menu-barrinha');
-const menuOpcoes = document.querySelector('.menu-opcoes');
+        <h2>Entrar ou Cadastrar</h2>
+        <p>Faça login com sua conta do Google ou e-mail:</p>
 
-menuBarrinha.addEventListener('click', () => {
-  menuOpcoes.style.display = menuOpcoes.style.display === 'block' ? 'none' : 'block';
-});
-        </script>
+        <div class="login-options">
+            
+            <form id="emailLoginForm">
+                <input type="email" placeholder="Seu e-mail" required>
+                <input type="password" placeholder="Sua senha" required>
+                <button class="login-btn google-btn">Login com Google</button>
+                <br><br>
+                <button type="submit" class="login-btn">Login com E-mail</button>
+            </form>
+        </div>
+
+        <p class="register-prompt">Ainda não tem uma conta? <a href="#" class="register-link">Cadastre-se aqui!</a></p>
+    </div>
+
+    <script>
+        document.getElementById('emailLoginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Aqui você pode adicionar a lógica para autenticar com e-mail e senha
+            alert('Login com e-mail enviado!');
+        });
+    </script>
 </body>
 </html>
