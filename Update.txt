@@ -14,7 +14,10 @@
 	-Botões de adicionar ao pedido embaixo de cada card;
 	-Diminuição de tamanho de cards;
 	-Botão meus pedidos adicionado;
-	-Botão meus pedidos linkado a aba pedidos e funcionando.
+	-Botão meus pedidos linkado a aba pedidos e funcionando;
+	-Barra na lateral esquerda adicionada;
+	-Barra na lateral com opção "Fazer Login"
+	-Opção "fazer login" devidamente linkada a "login.html".
 
 ¬Carrinho.HTML
 	-Criação da aba "meus pedidos";
