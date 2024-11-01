@@ -48,5 +48,23 @@
             <button class="adicionar-pedido">Adicionar aos pedidos</button>
         </div>
     </div>
+    <div class="menu-barrinha">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-opcoes">
+        <ul>
+            <li><a href="login.html" class="fazer-login">Fazer Login</a></li>
+        </ul>
+      </div>
+        <script>
+const menuBarrinha = document.querySelector('.menu-barrinha');
+const menuOpcoes = document.querySelector('.menu-opcoes');
+
+menuBarrinha.addEventListener('click', () => {
+  menuOpcoes.style.display = menuOpcoes.style.display === 'block' ? 'none' : 'block';
+});
+        </script>
 </body>
 </html>
