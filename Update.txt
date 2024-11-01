@@ -31,7 +31,8 @@
 
 ¬StyleLogin.CSS
 	-Antes era um arquivo fantasma sem link algum com qualquer HTML;
-	-Agora está linkado a "Projeto.html" e "login.html".
+	-Agora está linkado a "Projeto.html" e "login.html";
+	-Ajuste de tamanho da barra de login e senha.
 
 ¬StyleCardapio.CSS
-	-Criação do próprio.
+	-Mudança de cores.
