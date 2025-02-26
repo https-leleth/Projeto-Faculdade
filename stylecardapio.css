@@ -4,6 +4,12 @@ body {
     margin: 0, auto;
     padding: 20px;
 }
+body {
+  background-image: url('mouth.png'); /* Substitua pelo caminho correto da imagem */
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
 
 h1 {
     text-align: center;
